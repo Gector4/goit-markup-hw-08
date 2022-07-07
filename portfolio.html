@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вэб студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <!-- Body -->
+  <body class="body">
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+      <div class="container page-header__container">
+      <nav class="navigation">
+        <a class="logo" href="" lang="en"><span class="logo__web">Web</span>Studio</a>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Студия</a></li>
+
+          <li class="menu__item"><a class="menu__link menu__link_active" href="./portfolio.html">Портфолио</a></li>
+
+          <li class="menu__item"><a class="menu__link" href="address">Контакты</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-menu-open-btn" data-menu-open>
+        <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+        <use href="./imegs/icons.svg/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-contacts">
+       
+       <li class="menu-contacts__item">
+       
+       <a class="menu-contacts__link" href="mailto:info@devstudio.com"> <svg class="menu-contacts__icon" width="16" height="12">
+        <use href="./imegs/icons.svg/sprite.svg#icon-mail"></use>
+      </svg>info@devstudio.com</a>
+       
+      </li>
+      
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__link" href="tel:+380961111111"><svg class="menu-contacts__icon" width="10" height="16">
+          <use href="./imegs/icons.svg/sprite.svg#icon-smartphone"></use>
+        </svg> +38 096 111 11 11</a>
+      </li>
+      </ul>
+            </div>
+
+            
+    </header>
+    <!-- ======Main====== -->
+
+    <!-- ======Buttons porfolio====== -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">кнопки</h1>
+          <ul class="buttons-porfolio">
+            <li class="buttons-cont-portfol">
+              <button class="buttons-porfolio-all" type="button">Все</button>
+            </li>
+            <li class="buttons-cont-portfol">
+              <button class="buttons-porfolio-all" type="button">Веб-сайты</button>
+            </li>
+            <li class="buttons-cont-portfol">
+              <button class="buttons-porfolio-all" type="button">Приложения</button>
+            </li>
+            <li class="buttons-cont-portfol">
+              <button class="buttons-porfolio-all" type="button">Дизайн</button>
+            </li>
+            <li class="buttons-cont-portfol">
+              <button class="buttons-porfolio-all" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- ======/Buttons porfolio====== -->
+
+          <!-- Developments -->
+
+          <ul class="developments">
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/tehno/img.webp 1x, ./imegs/developments/destop/tehno/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/tehno/img.jpg 1x, ./imegs/developments/destop/tehno/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/tehno/img.webp 1x, ./imegs/developments/tablet/tehno/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/tehno/img.jpg 1x, ./imegs/developments/tablet/tehno/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/tehno/img.webp 1x, ./imegs/developments/mob/tehno/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/tehno/img.jpg 1x, ./imegs/developments/mob/tehno/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                  <img
+                    src="./imegs/gallery-3/gallery-3-img-1.jpg"
+                    alt="Веб-сайт"
+                    class="developments-img"
+                  />
+                  </picture>
+
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Технокряк</h2>
+                  <p class="developments-offer">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/poster/img.webp 1x, ./imegs/developments/destop/poster/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/poster/img.jpg 1x, ./imegs/developments/destop/poster/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/poster/img.webp 1x, ./imegs/developments/tablet/poster/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/poster/img.jpg 1x, ./imegs/developments/tablet/poster/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/poster/img.webp 1x, ./imegs/developments/mob/poster/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/poster/img.jpg 1x, ./imegs/developments/mob/poster/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-2.jpg"
+                    alt="баскетболисты"
+                    class="developments-img"
+                  />
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Постер<span lang="en"> New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="developments-offer">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/restoran/img.webp 1x, ./imegs/developments/destop/restoran/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/restoran/img.jpg 1x, ./imegs/developments/destop/restoran/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/restoran/img.webp 1x, ./imegs/developments/tablet/restoran/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/restoran/img.jpg 1x, ./imegs/developments/tablet/restoran/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/restoran/img.webp 1x, ./imegs/developments/mob/restoran/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/restoran/img.jpg 1x, ./imegs/developments/mob/restoran/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-3.jpg"
+                    alt="приложения"
+                    class="developments-img"
+                  />
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="developments-offer">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/prim/img.webp 1x, ./imegs/developments/destop/prim/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/prim/img.jpg 1x, ./imegs/developments/destop/prim/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/prim/img.webp 1x, ./imegs/developments/tablet/prim/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/prim/img.jpg 1x, ./imegs/developments/tablet/prim/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/prim/img.webp 1x, ./imegs/developments/mob/prim/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/prim/img.jpg 1x, ./imegs/developments/mob/prim/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-4.jpg"
+                    alt="наушники"
+                    class="developments-img"
+                    />
+
+                  </picture>
+                 
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Проект <span lang="en">Prime</span></h2>
+                  <p class="developments-offer">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/boxes/img.webp 1x, ./imegs/developments/destop/boxes/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/boxes/img.jpg 1x, ./imegs/developments/destop/boxes/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/boxes/img.webp 1x, ./imegs/developments/tablet/boxes/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/boxes/img.jpg 1x, ./imegs/developments/tablet/boxes/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/boxes/img.webp 1x, ./imegs/developments/mob/boxes/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/boxes/img.jpg 1x, ./imegs/developments/mob/boxes/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-5.jpg"
+                    alt="две коробки"
+                    class="developments-img"
+                  />
+                  </picture>
+                 
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="developments-offer">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/web/img.webp 1x, ./imegs/developments/destop/web/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/web/img.jpg 1x, ./imegs/developments/destop/web/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/web/img.webp 1x, ./imegs/developments/tablet/web/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/web/img.jpg 1x, ./imegs/developments/tablet/web/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/web/img.webp 1x, ./imegs/developments/mob/web/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/web/img.jpg 1x, ./imegs/developments/mob/web/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-6.jpg"
+                    alt="монитор"
+                    class="developments-img"
+                  />
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="developments-offer">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/izdanie/img.webp 1x, ./imegs/developments/destop/izdanie/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/izdanie/img.jpg 1x, ./imegs/developments/destop/izdanie/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/izdanie/img.webp 1x, ./imegs/developments/tablet/izdanie/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/izdanie/img.jpg 1x, ./imegs/developments/tablet/izdanie/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/izdanie/img.webp 1x, ./imegs/developments/mob/izdanie/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/izdanie/img.jpg 1x, ./imegs/developments/mob/izdanie/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-7.jpg"
+                    alt="книга"
+                    class="developments-img"
+                  />
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h2 class="developments-title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="developments-offer">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/lab/img.webp 1x, ./imegs/developments/destop/lab/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/lab/img.jpg 1x, ./imegs/developments/destop/lab/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/lab/img.webp 1x, ./imegs/developments/tablet/lab/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/lab/img.jpg 1x, ./imegs/developments/tablet/lab/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/lab/img.webp 1x, ./imegs/developments/mob/lab/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/lab/img.jpg 1x, ./imegs/developments/mob/lab/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-8.jpg"
+                    alt="этикетка"
+                    class="developments-img"
+                  />
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h3 class="developments-title">Проект <span lang="en">LAB</span></h3>
+                  <p class="developments-offer">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="developments-all">
+              <a href="" class="developments-link">
+                <div class="resource">
+                  <picture>
+                    <source 
+                    srcset="./imegs/developments/destop/groving/img.webp 1x, ./imegs/developments/destop/groving/img.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/destop/groving/img.jpg 1x, ./imegs/developments/destop/groving/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/groving/img.webp 1x, ./imegs/developments/tablet/groving/img@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/tablet/groving/img.jpg 1x, ./imegs/developments/tablet/groving/img@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/groving/img.webp 1x, ./imegs/developments/mob/groving/img@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    />
+                    <source 
+                    srcset="./imegs/developments/mob/groving/img.jpg 1x, ./imegs/developments/mob/groving/img@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imegs/gallery-3/gallery-3-img-9.jpg"
+                    alt="ноутбук"
+                    class="developments-img"
+                groving
+                  </picture>
+                  
+                  <p class="resource-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="develop-solid">
+                  <h3 class="developments-title" lang="en">Growing Business</h3>
+                  <p class="developments-offer">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /Developments -->
+      </section>
+    </main>
+    <!-- Address-footer -->
+    <footer class="footer">
+      <div class="container address">
+        <div class="logo-footer-address">
+          <a class="logo logo-footer_theme_dark link" href="" lang="en"
+            ><span class="logo-footer_theme_dark_web">Web</span>Studio</a
+          >
+
+          <address>
+            <ul class="list">
+              <li class="list__address">
+                <a
+                  class="list__address-contacts"
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265807,30.5361918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="list__address">
+                <a class="list__address-contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="list__address">
+                <a class="list__address-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Join -->
+        <div class="join">
+          <h2 class="join__verb">присоединяйтесь</h2>
+          <ul class="join__list list">
+            <li class="join__items">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./imegs/icons.svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__items">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./imegs/icons.svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__items">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./imegs/icons.svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__items">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
+                  <use href="./imegs/icons.svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- /Join -->
+
+        <!--Form-->
+        <form class="form-subscription">
+          <p class="form-subscription__text">Подпишитесь на рассылку</p>
+          <span class="form-subscription__unit">
+            <input
+              type="email"
+              class="form-subscription__email"
+              name="e-mail"
+              pattern=""
+              placeholder="E-mail"
+            />
+            <div class="form-conteiner">
+              <button class="form-subscription__button" type="submit">
+                Подписаться<svg class="form-subscription__icon" width="24" height="24">
+                  <use href="./imegs/icons.svg/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </span>
+        </form>
+
+        <!--/Form-->
+      </div>
+    </footer>
+
+    <!-- /Address-footer -->
+
+    <!--Mobile-Menu-->
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./imegs/icons.svg/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        
+        <ul class="menu-contact">
+          <li class="menu-contact__item"><a class="menu-contact__link" href="index.html">Студия</a></li>
+
+          <li class="menu-contact__item"><a class="menu-contact__link_active" href="./portfolio.html">Портфолио</a></li>
+
+          <li class="menu-contact__item"><a class="menu-contact__link" href="address">Контакты</a></li>
+        </ul>
+        <div class="mobile-bootom">
+          <ul class="mobile-bootom__menu">
+            <li class="mobile-bootom__item">
+              <a class="mobile-bootom__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-bootom__item">
+              <a class="mobile-bootom__link-mailo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <div>
+            <ul class="mobile-bootom__socials">
+            <li class="mobile-bootom__socials-item">
+              <a class="mobile-bootom__socials-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-bootom__socials-item">
+              <a class="mobile-bootom__socials-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-bootom__socials-item">
+              <a class="mobile-bootom__socials-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-bootom__socials-item">
+              <a class="mobile-bootom__socials-link" href="">LinkedIn</a>
+            </li>
+          </ul class="mobile-bootom__socials-item">
+          </div>
+          
+        </div>
+        
+      </div>
+        
+    </div>
+
+    <!--/Mobile-Menu-->
+    
+    <script src="./js/menu.js"></script>
+
+  </body>
+</html>

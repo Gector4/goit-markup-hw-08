@@ -1,0 +1,207 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms, visibility 500ms linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--additional-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-close-btn-icon {
+  fill: #000000;
+  transition: fill 250ms var(--cubic-bezier);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.cont-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.cont-form-text {
+  display: block;
+  font-weight: var(--primary-text-size);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+
+.cont-form-field {
+  margin-bottom: 10px;
+}
+
+.cont-form-field-key {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.cont-form-input-wrapper {
+  position: relative;
+}
+
+.cont-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms var(--cubic-bezier);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.cont-form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: fill 250ms var(--cubic-bezier);
+
+  .cont-form-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.cont-form-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5px;
+  resize: none;
+  padding: 10px 16px;
+  transition: border-color 250ms var(--cubic-bezier);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.contact-form-checkbox-label {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  &::before {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #212121;
+    content: '';
+    cursor: pointer;
+    margin-right: 7px;
+    border-radius: 2px;
+
+    .contact-form-checkbox:checked + & {
+      background-image: url('../imegs/icons.svg/star.svg');
+      background-color: var(--accent-color);
+      border: transparent;
+      border-radius: 2px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .contact-form-checkbox:focus + & {
+      outline: 2px solid var(--accent-color);
+    }
+  }
+}
+
+.policy-treaty {
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.cont-form-btn {
+  padding-left: 0;
+  padding-right: 0;
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  font-weight: var(--primary-text-size);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.06em;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: background-color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
