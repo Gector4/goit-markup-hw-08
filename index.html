@@ -49,7 +49,8 @@
             <a class="menu-contacts__link" href="mailto:info@devstudio.com">
               <svg class="menu-contacts__icon" width="16" height="12">
                 <use href="./imegs/icons.svg/sprite.svg#icon-mail"></use></svg
-              >info@devstudio.com</a>
+              >info@devstudio.com</a
+            >
           </li>
 
           <li class="menu-contacts__item">
@@ -57,12 +58,11 @@
               ><svg class="menu-contacts__icon" width="10" height="16">
                 <use href="./imegs/icons.svg/sprite.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
-
-     
     </header>
 
     <main>
@@ -699,13 +699,13 @@
               pattern=""
               placeholder="E-mail"
             />
-            <div class="form-conteiner">
+            <span class="form-conteiner">
               <button class="form-subscription__button" type="submit">
                 Подписаться<svg class="form-subscription__icon" width="24" height="24">
                   <use href="./imegs/icons.svg/sprite.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </span>
           </span>
         </form>
 
@@ -714,37 +714,44 @@
     </footer>
 
     <!-- /Address-footer -->
-     <!--Mobile-Menu-->
 
-     <div class="mobile-menu" data-menu>
+    <!--Mobile-Menu-->
+
+    <div class="mobile-menu" data-menu>
       <div class="container mobile-menu__container">
         <button type="button" class="mobile-menu__close-btn" data-menu-close>
           <svg class="mobile-menu__close-icon" width="40" height="40">
             <use href="./imegs/icons.svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="mobile-menu__socials">
 
         <ul class="menu-contact">
-          <li class="menu-contact__item"><a class="menu-contact__link_active" href="index.html">Студия</a></li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link_active" href="index.html">Студия</a>
+          </li>
 
-          <li class="menu-contact__item"><a class="menu-contact__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link" href="./portfolio.html">Портфолио</a>
+          </li>
 
-          <li class="menu-contact__item"><a class="menu-contact__link" href="address">Контакты</a></li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link" href="address">Контакты</a>
+          </li>
         </ul>
 
-        
-
+        <div class="mobile-bootom">
           <ul class="mobile-bootom__menu">
             <li class="mobile-bootom__item">
               <a class="mobile-bootom__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="mobile-bootom__item">
-              <a class="mobile-bootom__link-mailo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="mobile-bootom__link-mailo" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-          
-            <ul class="mobile-bootom__socials">
+
+          <ul class="mobile-bootom__socials">
             <li class="mobile-bootom__socials-item">
               <a class="mobile-bootom__socials-link" href="">Instagram</a>
             </li>
@@ -757,19 +764,15 @@
             <li class="mobile-bootom__socials-item">
               <a class="mobile-bootom__socials-link" href="">LinkedIn</a>
             </li>
-          </ul class="mobile-bootom__socials-item">
-        
-          </div>
-          
-        
-        
+          </ul>
+        </div>
       </div>
-        
     </div>
 
-<!--/Mobile-Menu-->
+    <!--/Mobile-Menu-->
 
     <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>

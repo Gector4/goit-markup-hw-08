@@ -6,7 +6,6 @@
 }
 
 .customers-list {
-  margin-bottom: 30px;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 2 - 30px);
@@ -20,9 +19,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .customers-list:nth-child(-n + 4) {
-    margin-bottom: 30px;
-  }
 }
 .customers-link {
   height: 92px;

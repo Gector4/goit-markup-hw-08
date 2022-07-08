@@ -45,9 +45,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .join {
+    margin-top: 60px;
+  }
   .join__verb {
     text-align: center;
-    margin-top: 60px;
   }
 }
 @media screen and (max-width: 1199px) {

@@ -17,7 +17,7 @@
 
 .form-subscription__email {
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   letter-spacing: 0.03em;
   padding-left: 12px;
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .address {
     display: flex;
     flex-direction: row;
@@ -92,10 +92,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .address {
-    display: flex;
-  }
-
   .form-subscription {
     margin-top: 0px;
     margin-left: auto;
@@ -104,6 +100,7 @@
     text-align: start;
   }
   .form-subscription__email {
+    margin-bottom: 0px;
     width: 358px;
   }
   .form-subscription__unit {
